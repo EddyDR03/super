@@ -1,0 +1,333 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Protest+Riot&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* variables */
+/* FONTS: Outfit, Bebas Neue, Protest Riot */
+.width-full {
+  width: 100%;
+  font-family: Outfit, sans-serif;
+}
+
+/* HEDAER */
+header {
+  display: grid;
+  grid-template-rows: 4rem 4rem;
+}
+header .header-1st {
+  color: #F7F7F7;
+  width: 100%;
+  background-color: #63639F;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+}
+header .header-1st .header__menu-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header-1st .header__menu-section .header__logo {
+  padding-top: 0.5rem;
+  color: #C7FFFF;
+  font-family: protest riot, sans-serif;
+  font-size: larger;
+}
+header .header-1st .header__menu-section .header__btn {
+  background-color: #45456e;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+header .header-2nd {
+  width: 100%;
+  background-color: #57578C;
+  grid-area: 2/1/3/1;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+header .header-2nd .header-2nd__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  color: #F7F7F7;
+}
+header .header-2nd .header-2nd__content .header-2nd__titles {
+  border-bottom: 2px solid #45456e;
+}
+
+/* BODY */
+body {
+  background-color: #e9e9e9;
+}
+
+/* CAOURSEL IMGS */
+.caoursel-slides--section {
+  width: 100%;
+}
+.caoursel-slides--section .caoursel__slides {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
+.caoursel-slides--section .caoursel__slides .caoursel__slide {
+  width: 100%;
+  background-color: #63639F;
+  border-radius: 0.5rem;
+}
+.caoursel-slides--section .caoursel__slides .caoursel__slide .slide__content {
+  padding: 1rem;
+  color: #F7F7F7;
+}
+.caoursel-slides--section .caoursel__slides .caoursel__slide .slide__content .slide__top-section .slide__header {
+  font-weight: 700;
+}
+.caoursel-slides--section .caoursel__slides .caoursel__slide .slide__content .slide__top-section .slide__text {
+  padding-top: 1rem;
+}
+.caoursel-slides--section .caoursel__slides .caoursel__slide .slide__content .slide__bot-section {
+  padding-top: 3rem;
+}
+
+/* CAOURSEL SVGS */
+.caoursel-svgs--section {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  gap: 1rem;
+}
+.caoursel-svgs--section .caoursel-svgs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* LIVE */
+.live-section {
+  width: 100%;
+}
+.live-section .live {
+  padding: 1rem;
+}
+.live-section .live .live__header {
+  color: #45456e;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.live-section .live .live__header .live__title {
+  font-family: Protest Riot, sans-serif;
+  font-size: larger;
+}
+
+/* SPORTS */
+.sports__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #45456e;
+  font-weight: 700;
+}
+.sports__header .sports__title {
+  font-family: Protest Riot, sans-serif;
+  font-size: larger;
+}
+
+.sports {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  gap: 1rem;
+}
+.sports .sports__card {
+  background-color: #63639F;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #F7F7F7;
+}
+.sports .sports__card .sports-card__header {
+  font-weight: 700;
+  color: #C7FFFF;
+}
+.sports .sports__card .sports-card__text {
+  padding-top: 1rem;
+}
+
+/* SUPER */
+.super__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: 700;
+  color: #45456e;
+}
+.super__header .super__title {
+  font-family: Protest Riot, sans-serif;
+  font-size: larger;
+}
+
+/*CARD */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #57578C;
+  border-radius: 1rem;
+  color: #F7F7F7;
+  border: 2px solid #F7F7F7;
+}
+.card .card__left {
+  padding: 1rem;
+  border-bottom: 2px solid #F7F7F7;
+}
+.card .card__left .card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  color: #C7FFFF;
+}
+.card .card__left .card__teams {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 700;
+}
+.card .card__right {
+  padding: 1rem;
+}
+.card .card__right .card__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card .card__right .card__btns .card__btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 700;
+  background-color: #45456e;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #F7F7F7;
+  color: #C7FFFF;
+}
+
+/* FOOTER */
+footer {
+  background-color: #57578C;
+  font-family: Outfit, sans-serif;
+  color: #F7F7F7;
+}
+footer .footer__header {
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: #C7FFFF;
+  font-family: Bebas Neue;
+  font-size: 1.75rem;
+  border-bottom: 2px solid #F7F7F7;
+}
+footer .footer__content {
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+footer .footer__content ul {
+  padding-bottom: 3.5rem;
+}
+footer .footer__content ul li {
+  padding-top: 1rem;
+}
+footer .footer__text-1 {
+  padding: 1rem;
+  width: 100%;
+  background-color: #45456e;
+}
+footer .footer__text-1 .text-1__header {
+  font-size: large;
+  padding-bottom: 1rem;
+}
+footer .footer__text-2 {
+  background-color: #39395A;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #C7FFFF;
+  font-family: protest riot, sans-serif;
+  font-size: 2rem;
+}/*# sourceMappingURL=Style.css.map */

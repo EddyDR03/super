@@ -1,0 +1,338 @@
+/* import */
+
+@import "./reset.scss";
+@import "./Variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Protest+Riot&display=swap');
+/* FONTS: Outfit, Bebas Neue, Protest Riot */
+
+
+
+.width-full {
+    width: 100%;
+    font-family: Outfit, sans-serif;
+}
+
+/* HEDAER */
+
+header {
+    display: grid;
+    grid-template-rows: 4rem 4rem;
+
+    .header-1st {  
+        color: $TectColor-White;
+        width: 100%;
+        background-color: $PrimaryColor;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+
+        .header__menu-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .header__logo {
+                padding-top: 0.50rem;
+                color: $TextColor-LBlue;
+                font-family: protest riot, sans-serif;
+                font-size: larger;
+            }
+
+            .header__btn {
+                background-color: $BtnColor;
+                padding: 0.50rem;
+                border-radius: 0.50rem;
+            }
+
+        }
+    }
+
+    .header-2nd {
+        width: 100%;
+        background-color: $ndColor-DPurple;
+        grid-area: 2 / 1 / 3/ 1;
+        border-radius: 0 0 0.50rem 0.50rem;
+        
+        
+        .header-2nd__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 1rem;
+            padding-top: 1.50rem;
+            padding-left: 1rem;
+            color: $TectColor-White;
+
+            .header-2nd__titles {
+                border-bottom: 2px solid $BtnColor;
+            }
+        }
+    }
+}
+
+
+/* BODY */
+
+body {
+    background-color: #e9e9e9;
+}
+
+/* CAOURSEL IMGS */
+
+.caoursel-slides--section {
+    width: 100%;
+
+    .caoursel__slides {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        white-space: nowrap;
+        gap: 1rem;
+        scroll-behavior: smooth;
+
+        .caoursel__slide {
+            width: 100%;
+            background-color: $PrimaryColor;
+            border-radius: 0.50rem;
+
+            .slide__content {
+                padding: 1rem;
+                color: $TectColor-White;
+
+                .slide__top-section {
+        
+                    .slide__header {
+                        font-weight: 700;
+                    }
+
+                    .slide__text {
+                        padding-top: 1rem;
+                    }
+                }
+
+                .slide__bot-section {
+                    padding-top: 3rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* CAOURSEL SVGS */
+
+.caoursel-svgs--section {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    gap: 1rem;
+
+    .caoursel-svgs {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+/* LIVE */
+
+.live-section {
+    width: 100%;
+
+    .live {
+        padding: 1rem;
+
+        .live__header {
+            color: $BtnColor;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .live__title {
+                font-family: Protest Riot, sans-serif;
+                font-size: larger;
+            }
+        }
+    }
+}
+
+
+/* SPORTS */
+
+.sports__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    color: $BtnColor;
+    font-weight: 700;
+
+    .sports__title {
+        font-family: Protest Riot, sans-serif;
+        font-size: larger;
+    }
+}
+
+.sports {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    gap: 1rem;
+
+    .sports__card {
+        background-color: $PrimaryColor;
+        padding: 0.50rem 1rem;
+        border-radius: 0.50rem;
+        color: $TectColor-White;
+
+        .sports-card__header {
+            font-weight: 700;
+            color: $TextColor-LBlue;
+        }
+
+        .sports-card__text {
+            padding-top: 1rem;
+        }
+    }
+}
+
+/* SUPER */
+
+.super__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: 700;
+    color: $BtnColor;
+
+    .super__title {
+        font-family: Protest Riot, sans-serif;
+        font-size: larger;
+    }
+}
+
+
+/*CARD */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: $ndColor-DPurple;
+    border-radius: 1rem;
+    color: $TectColor-White;
+    border: 2px solid $TectColor-White;
+    
+
+    .card__left {
+        padding: 1rem;
+        border-bottom: 2px solid $TectColor-White;
+        
+
+        .card__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 700;
+            color: $TextColor-LBlue;
+        }
+
+        .card__teams {
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-weight: 700;
+        }
+    }
+
+    .card__right {
+        padding: 1rem;
+
+        .card__btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .card__btn {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                font-weight: 700;
+                background-color: $BtnColor;
+                padding: 0.50rem 1rem;
+                border-radius: 0.25rem;
+                border: 1px solid $TectColor-White;
+                color: $TextColor-LBlue;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: $ndColor-DPurple;
+    font-family: Outfit, sans-serif;
+    color: $TectColor-White;
+
+    .footer__header {
+        padding: 1rem;
+        padding-top: 1.50rem;
+        padding-bottom: 1rem;
+        color: $TextColor-LBlue;
+        font-family: Bebas Neue;
+        font-size: 1.75rem;
+        border-bottom: 2px solid $TectColor-White;
+    }
+
+    .footer__content {
+        padding: 1rem;
+        padding-top: 1.50rem;
+            ul {
+
+                padding-bottom: 3.50rem;
+                li {
+                    padding-top: 1rem;
+                }
+            }
+    }
+
+    .footer__text-1 {
+        padding: 1rem;
+        width: 100%;
+        background-color: $BtnColor;
+
+        .text-1__header {
+            font-size: large;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .footer__text-2 {
+        background-color: #39395A;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $TextColor-LBlue;
+        font-family: protest riot, sans-serif;
+        font-size: 2rem;
+    }
+}
